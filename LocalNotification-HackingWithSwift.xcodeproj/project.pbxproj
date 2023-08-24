@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		FDF7E9822A977CDC00376892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7E9812A977CDC00376892 /* AppDelegate.swift */; };
 		FDF7E9842A977CDC00376892 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7E9832A977CDC00376892 /* SceneDelegate.swift */; };
-		FDF7E9862A977CDC00376892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7E9852A977CDC00376892 /* ViewController.swift */; };
-		FDF7E9892A977CDC00376892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF7E9872A977CDC00376892 /* Main.storyboard */; };
 		FDF7E98B2A977CDD00376892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF7E98A2A977CDD00376892 /* Assets.xcassets */; };
-		FDF7E98E2A977CDD00376892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF7E98C2A977CDD00376892 /* LaunchScreen.storyboard */; };
+		FDF7E9972A977D6000376892 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7E9962A977D6000376892 /* HomeVC.swift */; };
+		FDF7E99A2A977D6E00376892 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF7E9992A977D6E00376892 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FDF7E97E2A977CDC00376892 /* LocalNotification-HackingWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LocalNotification-HackingWithSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF7E9812A977CDC00376892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF7E9832A977CDC00376892 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDF7E9852A977CDC00376892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDF7E9882A977CDC00376892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDF7E98A2A977CDD00376892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FDF7E98D2A977CDD00376892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDF7E98F2A977CDD00376892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF7E9962A977D6000376892 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FDF7E9992A977D6E00376892 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,22 @@
 		FDF7E9802A977CDC00376892 /* LocalNotification-HackingWithSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FDF7E9952A977D4E00376892 /* HomeVC */,
 				FDF7E9812A977CDC00376892 /* AppDelegate.swift */,
 				FDF7E9832A977CDC00376892 /* SceneDelegate.swift */,
-				FDF7E9852A977CDC00376892 /* ViewController.swift */,
-				FDF7E9872A977CDC00376892 /* Main.storyboard */,
 				FDF7E98A2A977CDD00376892 /* Assets.xcassets */,
-				FDF7E98C2A977CDD00376892 /* LaunchScreen.storyboard */,
 				FDF7E98F2A977CDD00376892 /* Info.plist */,
 			);
 			path = "LocalNotification-HackingWithSwift";
+			sourceTree = "<group>";
+		};
+		FDF7E9952A977D4E00376892 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDF7E9962A977D6000376892 /* HomeVC.swift */,
+				FDF7E9992A977D6E00376892 /* Home.storyboard */,
+			);
+			path = HomeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +130,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDF7E98E2A977CDD00376892 /* LaunchScreen.storyboard in Resources */,
 				FDF7E98B2A977CDD00376892 /* Assets.xcassets in Resources */,
-				FDF7E9892A977CDC00376892 /* Main.storyboard in Resources */,
+				FDF7E99A2A977D6E00376892 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +142,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDF7E9862A977CDC00376892 /* ViewController.swift in Sources */,
+				FDF7E9972A977D6000376892 /* HomeVC.swift in Sources */,
 				FDF7E9822A977CDC00376892 /* AppDelegate.swift in Sources */,
 				FDF7E9842A977CDC00376892 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FDF7E9872A977CDC00376892 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDF7E9882A977CDC00376892 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FDF7E98C2A977CDD00376892 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDF7E98D2A977CDD00376892 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FDF7E9902A977CDD00376892 /* Debug */ = {
@@ -292,7 +277,6 @@
 				INFOPLIST_FILE = "LocalNotification-HackingWithSwift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +304,6 @@
 				INFOPLIST_FILE = "LocalNotification-HackingWithSwift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
